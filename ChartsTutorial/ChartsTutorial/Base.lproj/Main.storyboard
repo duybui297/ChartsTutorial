@@ -111,13 +111,30 @@
                     <view key="view" contentMode="scaleToFill" id="9Ja-Of-LFb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQX-F0-lIZ" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BBv-vk-F28"/>
+                                    <constraint firstAttribute="width" constant="300" id="Not-Ai-D3k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OQX-F0-lIZ" firstAttribute="centerX" secondItem="9Ja-Of-LFb" secondAttribute="centerX" id="PAU-N8-wiz"/>
+                            <constraint firstItem="OQX-F0-lIZ" firstAttribute="centerY" secondItem="9Ja-Of-LFb" secondAttribute="centerY" id="Rc5-zS-Lg6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wYy-QU-zgs"/>
                     </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="OQX-F0-lIZ" id="WoD-oJ-IJS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAW-LC-Yj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="-618"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="-618.44077961019491"/>
         </scene>
         <!--Line Chart View Controller-->
         <scene sceneID="drs-zU-wsN">
@@ -126,13 +143,30 @@
                     <view key="view" contentMode="scaleToFill" id="QRR-ro-G3Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nu3-jf-yNX" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="91B-TF-V6Q"/>
+                                    <constraint firstAttribute="width" constant="300" id="mSn-q5-OIN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nu3-jf-yNX" firstAttribute="centerX" secondItem="QRR-ro-G3Q" secondAttribute="centerX" id="OSA-Jk-Tpx"/>
+                            <constraint firstItem="Nu3-jf-yNX" firstAttribute="centerY" secondItem="QRR-ro-G3Q" secondAttribute="centerY" id="me0-e8-zBY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5QR-LF-0cN"/>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="Nu3-jf-yNX" id="3M4-p8-bq7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysY-zN-ULd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="127"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="126.38680659670166"/>
         </scene>
         <!--Bar Chart View Controller-->
         <scene sceneID="vpO-m8-HiJ">
@@ -141,13 +175,30 @@
                     <view key="view" contentMode="scaleToFill" id="CI1-uD-VY9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kS-aA-Wyz" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="T9f-Tl-N0N"/>
+                                    <constraint firstAttribute="height" constant="300" id="tG1-37-N0C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1kS-aA-Wyz" firstAttribute="centerY" secondItem="CI1-uD-VY9" secondAttribute="centerY" id="CU9-17-bR6"/>
+                            <constraint firstItem="1kS-aA-Wyz" firstAttribute="centerX" secondItem="CI1-uD-VY9" secondAttribute="centerX" id="hMF-dX-I4a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="35K-5x-Rnk"/>
                     </view>
+                    <connections>
+                        <outlet property="barChartView" destination="1kS-aA-Wyz" id="SpP-IU-iPW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAJ-5U-gHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="949"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="948.57571214392806"/>
         </scene>
     </scenes>
 </document>

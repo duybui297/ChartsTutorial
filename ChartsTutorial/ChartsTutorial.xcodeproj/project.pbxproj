@@ -15,6 +15,8 @@
 		309C4A1E226ADAFB00EA8F77 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C4A1D226ADAFB00EA8F77 /* PieChartViewController.swift */; };
 		309C4A20226ADB2800EA8F77 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C4A1F226ADB2800EA8F77 /* LineChartViewController.swift */; };
 		309C4A22226ADB4500EA8F77 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C4A21226ADB4500EA8F77 /* BarChartViewController.swift */; };
+		309C4A24226B422600EA8F77 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C4A23226B422600EA8F77 /* CommonData.swift */; };
+		34DABD144F2684196D8BEDE8 /* Pods_ChartsTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759CD24ADE70B8377272D94E /* Pods_ChartsTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		309C4A1D226ADAFB00EA8F77 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		309C4A1F226ADB2800EA8F77 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		309C4A21226ADB4500EA8F77 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		309C4A23226B422600EA8F77 /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
+		4FE2CDF874C585A37C53F7F7 /* Pods-ChartsTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsTutorial.release.xcconfig"; path = "Target Support Files/Pods-ChartsTutorial/Pods-ChartsTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		759CD24ADE70B8377272D94E /* Pods_ChartsTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C31A1A98A10654572DD7D2A /* Pods-ChartsTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsTutorial.debug.xcconfig"; path = "Target Support Files/Pods-ChartsTutorial/Pods-ChartsTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DABD144F2684196D8BEDE8 /* Pods_ChartsTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				309C4A0A226AD23400EA8F77 /* ChartsTutorial */,
 				309C4A09226AD23400EA8F77 /* Products */,
+				48513CA322F660A8EC0054BA /* Pods */,
+				98412A848553B8E93FF4BE29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +78,26 @@
 				309C4A1D226ADAFB00EA8F77 /* PieChartViewController.swift */,
 				309C4A1F226ADB2800EA8F77 /* LineChartViewController.swift */,
 				309C4A21226ADB4500EA8F77 /* BarChartViewController.swift */,
+				309C4A23226B422600EA8F77 /* CommonData.swift */,
 			);
 			path = ChartsTutorial;
+			sourceTree = "<group>";
+		};
+		48513CA322F660A8EC0054BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C31A1A98A10654572DD7D2A /* Pods-ChartsTutorial.debug.xcconfig */,
+				4FE2CDF874C585A37C53F7F7 /* Pods-ChartsTutorial.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98412A848553B8E93FF4BE29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				759CD24ADE70B8377272D94E /* Pods_ChartsTutorial.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 309C4A1A226AD23700EA8F77 /* Build configuration list for PBXNativeTarget "ChartsTutorial" */;
 			buildPhases = (
+				5DFA16ED43E3F657B0865FA3 /* [CP] Check Pods Manifest.lock */,
 				309C4A04226AD23400EA8F77 /* Sources */,
 				309C4A05226AD23400EA8F77 /* Frameworks */,
 				309C4A06226AD23400EA8F77 /* Resources */,
+				F052F41F7FC87541565F0BF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +168,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DFA16ED43E3F657B0865FA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F052F41F7FC87541565F0BF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsTutorial/Pods-ChartsTutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartsTutorial/Pods-ChartsTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		309C4A04226AD23400EA8F77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -146,6 +222,7 @@
 			files = (
 				309C4A1E226ADAFB00EA8F77 /* PieChartViewController.swift in Sources */,
 				309C4A20226ADB2800EA8F77 /* LineChartViewController.swift in Sources */,
+				309C4A24226B422600EA8F77 /* CommonData.swift in Sources */,
 				309C4A0E226AD23400EA8F77 /* ViewController.swift in Sources */,
 				309C4A0C226AD23400EA8F77 /* AppDelegate.swift in Sources */,
 				309C4A22226ADB4500EA8F77 /* BarChartViewController.swift in Sources */,
@@ -292,6 +369,7 @@
 		};
 		309C4A1B226AD23700EA8F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C31A1A98A10654572DD7D2A /* Pods-ChartsTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +388,7 @@
 		};
 		309C4A1C226AD23700EA8F77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE2CDF874C585A37C53F7F7 /* Pods-ChartsTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,24 +7,28 @@
 //
 
 import UIKit
+import Charts
 
 class LineChartViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
+  @IBOutlet weak var lineChartView: LineChartView!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    customizeChart(dataPoints: players, values: goals.map{ Double($0) })
+  }
+  
+  func customizeChart(dataPoints: [String], values: [Double]) {
+    
+    var dataEntries: [ChartDataEntry] = []
+    
+    for i in 0..<dataPoints.count {
+      let dataEntry = ChartDataEntry(x: values[i], y: Double(i))
+      dataEntries.append(dataEntry)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    let lineChartDataSet = LineChartDataSet(values: dataEntries, label: nil)
+    let lineChartData = LineChartData(dataSet: lineChartDataSet)
+    lineChartView.data = lineChartData
+  }
 }
